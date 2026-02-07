@@ -17,9 +17,47 @@ body {
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 40px 16px;
+  gap: 24px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--purple), var(--teal));
+  color: #000430;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.badge-label {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+}
+
+.badge-value {
+  font-size: 14px;
 }
 
 
